@@ -2,7 +2,7 @@ name: Тестирование и развёртывание проекта
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   tests:
@@ -65,4 +65,4 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
-          script: expect /home/sasha/cd/pull.exp
+          script: expect /home/sasha/dj_cd/pull.exp
